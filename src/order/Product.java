@@ -77,11 +77,7 @@ public class Product extends Menu {
             tempList.add(arrayList.get(idx));
             System.out.println(idx+1+". "+product.getName()+"  | W "+product.getPrice()+" | "+product.getDesc());
         }
-//        for(Product product : arrayList){
-//            int idx =1;
-//            System.out.println(idx+". "+product.getName()+"  | W "+product.getPrice()+" | "+product.getDesc());
-//            idx
-//        }
+
         System.out.println("\n원하는 상품의 번호를 입력해주세요.");
         int ans = MainPage.sc.nextInt();
         if(ans<1 || ans > tempList.size()) {

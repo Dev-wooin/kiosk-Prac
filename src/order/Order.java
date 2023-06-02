@@ -32,7 +32,7 @@ public class Order {
                 break;
             case 2:
                 System.out.println("주문이 취소되었습니다.");
-                checkOrder(product);
+                MainPage.showIndex();
                 break;
             default:
                 System.out.println("올바르지 않은 입력입니다. ");
@@ -119,7 +119,7 @@ public class Order {
         }
         MainPage.showIndex();
     }
-        //장바구니 비우기. 결제 취소.
+    //장바구니 비우기. 결제 취소.
     static void cancleOrder () {
         orderArrayList.clear();
         System.out.println("주문이 취소되었습니다. 메뉴판으로 돌아갑니다.");
