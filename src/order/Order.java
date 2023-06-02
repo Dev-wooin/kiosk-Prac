@@ -57,7 +57,6 @@ public class Order {
         }
         return total;
     }
-
     //장바구니 리스트 전부 출력하기
     static void getTotalProduct() {
         for (Product product : orderArrayList) {
@@ -97,8 +96,8 @@ public class Order {
         }
     }
 
+    //주문번호 멤버 및 초기화 메소드
     static private int orderNum = 1;
-
     static void resetOrderNum() {
         orderNum=1;
     }
@@ -117,7 +116,6 @@ public class Order {
             TimeUnit.SECONDS.sleep(2);
         } catch (InterruptedException e) {
             throw new RuntimeException(e);
-
         }
         MainPage.showIndex();
     }
