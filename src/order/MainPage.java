@@ -12,13 +12,13 @@ public class MainPage {
         System.out.println("Hello SHAKESHACK World!!!\n" +
                 "아래 메뉴판을 보시고 메뉴를 골라 입력해주세요.\n\n" +
                 "[ SHAKESHACK MENU ]\n" +
-                "1. "+Menu.m1.getMenu()+"      | "+Menu.m1.desc+"\n" +  //생성자에서 수정하면 자동적용.
-                "2. "+Menu.m2.getMenu()+"      | "+Menu.m2.desc+"\n" +
-                "3. "+Menu.m3.getMenu()+"      | "+Menu.m3.desc+"\n" +
-                "4. "+Menu.m4.getMenu()+"      | "+Menu.m4.desc+"\n" +
+                "1. "+String.format("%-15s",Menu.m1.getMenu())+"| "+Menu.m1.desc+"\n" +  //생성자에서 수정하면 자동적용.
+                "2. "+String.format("%-15s",Menu.m2.getMenu())+"| "+Menu.m2.desc+"\n" +
+                "3. "+String.format("%-15s",Menu.m3.getMenu())+"| "+Menu.m3.desc+"\n" +
+                "4. "+String.format("%-15s",Menu.m4.getMenu())+"| "+Menu.m4.desc+"\n" +
                 "\n[ ORDER MENU ]\n" +
-                "5. "+Menu.m5.getMenu()+"      | "+Menu.m5.desc+"\n" +
-                "6. "+Menu.m6.getMenu()+"      | "+Menu.m6.desc+"\n");
+                "5. "+String.format("%-15s",Menu.m5.getMenu())+"| "+Menu.m5.desc+"\n" +
+                "6. "+String.format("%-15s",Menu.m6.getMenu())+"| "+Menu.m6.desc+"\n");
 //        Scanner sc = new Scanner(System.in);
         switch (sc.nextInt()){
             case 1 :

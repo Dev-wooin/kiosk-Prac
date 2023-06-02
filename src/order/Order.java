@@ -50,17 +50,18 @@ public class Order {
     }
 
     //장바구니 금액 합계 구하기
-    static double getTotalPrice() {
+     static String getTotalPrice() {
         double total = 0;
         for (Product product : orderArrayList) {
             total += product.getPrice();
         }
-        return total;
+        String totalStr = String.format("%.1f",total);
+        return totalStr;
     }
     //장바구니 리스트 전부 출력하기
     static void getTotalProduct() {
         for (Product product : orderArrayList) {
-            System.out.println(product.getName() + "  |  " + product.getPrice() + "  |  " + product.getDesc());
+            System.out.println(product.getName() + "  |  W" + product.getPrice() + "  |  " + product.getDesc());
         }
     }
 

@@ -75,7 +75,7 @@ public class Product extends Menu {
         for(int idx=0; idx<arrayList.size(); idx++){
             Product product = arrayList.get(idx);
             tempList.add(arrayList.get(idx));
-            System.out.println(idx+1+". "+product.getName()+"  | W "+product.getPrice()+" | "+product.getDesc());
+            System.out.println(idx+1+". "+String.format("%-15s",product.getName())+"  | W "+product.getPrice()+" | "+product.getDesc());
         }
 
         System.out.println("\n원하는 상품의 번호를 입력해주세요.");
