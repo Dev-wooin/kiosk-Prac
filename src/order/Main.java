@@ -5,6 +5,7 @@ public class Main {
 //        MainPage mainPage = new MainPage();
         Product.loadingList();
         MainPage.showIndex();
+        //연동 테스트
     }
 }
 
